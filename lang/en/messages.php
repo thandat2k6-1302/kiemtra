@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'home' => 'Home',
+    'categories' => 'Categories',
+    'about' => 'About',
+    'add_product' => 'Add Product',
+    'listing_title' => 'Food Categories',
+    'listing_subtitle' => 'Select fresh food every day from AT10 Food Store.',
+    'all' => 'All',
+    'details' => 'Details',
+    'add_to_cart' => 'Add to Cart',
+    'buy_now' => 'Buy Now',
+    'back_to_list' => 'Back to listing',
+    'related_products' => 'Related Products',
+    'new_product_title' => 'Add New Product',
+    'product_info' => 'Fill in the information below to add a product to your store.',
+    'name' => 'Food Name',
+    'price' => 'Price',
+    'category' => 'Category',
+    'description' => 'Description',
+    'image' => 'Image',
+    'save' => 'Save Product',
+    'cancel' => 'Cancel',
+    'success_add' => 'Product added successfully!',
+    'no_description' => 'No description available for this product.',
+];

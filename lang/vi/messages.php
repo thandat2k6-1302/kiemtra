@@ -1,0 +1,27 @@
+<?php
+
+return [
+    'home' => 'Trang chủ',
+    'categories' => 'Danh mục',
+    'about' => 'Giới thiệu',
+    'add_product' => 'Thêm Sản phẩm',
+    'listing_title' => 'Danh Mục Thực Phẩm',
+    'listing_subtitle' => 'Lựa chọn thực phẩm tươi ngon mỗi ngày từ AT10 Food Store.',
+    'all' => 'Tất cả',
+    'details' => 'Chi tiết',
+    'add_to_cart' => 'Thêm vào giỏ',
+    'buy_now' => 'Mua Ngay',
+    'back_to_list' => 'Quay lại danh sách',
+    'related_products' => 'Các sản phẩm cùng danh mục',
+    'new_product_title' => 'Thêm Thực Phẩm Mới',
+    'product_info' => 'Điền đầy đủ thông tin bên dưới để thêm thực phẩm vào cửa hàng của bạn.',
+    'name' => 'Tên thực phẩm',
+    'price' => 'Giá thành',
+    'category' => 'Danh mục',
+    'description' => 'Mô tả sản phẩm',
+    'image' => 'Hình ảnh',
+    'save' => 'Lưu Thực Phẩm',
+    'cancel' => 'Hủy bỏ',
+    'success_add' => 'Thêm thực phẩm thành công!',
+    'no_description' => 'Không có mô tả cho sản phẩm này.',
+];
