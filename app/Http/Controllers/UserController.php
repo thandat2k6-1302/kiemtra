@@ -12,7 +12,7 @@ class UserController extends Controller
     }
 
     public function postLogin(Request $req){
-        $this->validate($req,
+        $req->validate(
         [
             'email'=>'required|email',
             'password'=>'required|min:6|max:20'

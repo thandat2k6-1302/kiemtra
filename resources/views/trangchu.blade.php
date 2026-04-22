@@ -111,6 +111,50 @@
                             @endforeach
                         </div>
                     </div> <!-- .beta-products-list -->
+                    <div class="space50">&nbsp;</div>
+                    <div class="beta-products-list">
+                        <h4>Tất cả sản phẩm</h4>
+                        <div class="beta-products-details">
+                            <p class="pull-left">{{count($top_products)}} sản phẩm được tìm thấy</p>
+                            <div class="clearfix"></div>
+                        </div>
+                        <div class="row">
+                            @php $sttt=0; @endphp
+                            @foreach($top_products as $top_product)
+                            @php $sttt++; @endphp
+                            <div class="col-sm-3">
+                                <div class="single-item">
+                                    @if($top_product->promotion_price != 0)
+                                    <div class="ribbon-wrapper"><div class="ribbon sale">Sale</div></div>
+                                    @endif
+                                    <div class="single-item-header">
+                                        <a href="{{ route('banhang.chitiet', $top_product->id) }}"><img src="/source/image/product/{{$top_product->image}}" alt="" height="250px"></a>
+                                    </div>
+                                    <div class="single-item-body">
+                                        <p class="single-item-title">{{$top_product->name}}</p>
+                                        <p class="single-item-price" style="font-size: 15px; font-weight: bold;">
+                                            @if($top_product->promotion_price == 0)
+                                            <span class="flash-sale">{{ number_format($top_product->unit_price) }} đồng</span>
+                                            @else
+                                            <span class="flash-del">{{ number_format($top_product->unit_price) }} đồng</span>
+                                            <span class="flash-sale">{{ number_format($top_product->promotion_price) }} đồng</span>
+                                            @endif
+                                        </p>
+                                    </div>
+                                    <div class="single-item-caption">
+                                        <a class="add-to-cart pull-left" href="{{ route('banhang.addtocart', $top_product->id) }}"><i class="fa fa-shopping-cart"></i></a>
+                                        <a class="beta-btn primary" href="{{ route('banhang.chitiet', $top_product->id) }}">Chi tiết <i class="fa fa-chevron-right"></i></a>
+                                        <div class="clearfix"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            @if($sttt % 4 == 0)
+                            <div class="space40">&nbsp;</div>
+                            @endif
+                            @endforeach
+                        </div>
+                        <div class="row">{{$top_products->links()}}</div>
+                    </div> <!-- .beta-products-list -->
                 </div>
             </div> <!-- end section with sidebar and main content -->
         </div> <!-- .main-content -->

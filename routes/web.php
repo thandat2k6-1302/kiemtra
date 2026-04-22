@@ -106,3 +106,7 @@ Route::prefix('admin')->group(function () {
         });
    });
 });
+
+Route::get('/test-server', function() {
+    return "Server is working!";
+});
